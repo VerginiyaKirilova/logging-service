@@ -14,6 +14,8 @@ public class LogEntry {
 
     private String username;
 
+    private String message;
+
     private String action;
 
     private LocalDateTime timestamp;
@@ -55,5 +57,13 @@ public class LogEntry {
     }
     public void setTimestamp(LocalDateTime timestamp){
         this.timestamp = timestamp;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
