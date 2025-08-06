@@ -27,7 +27,7 @@ public class LogEntryController {
         logEntry.setMessage(request.getMessage());
         logEntry.setAction(request.getAction());
         logEntry.setTimestamp(LocalDateTime.now());
-
+        System.out.println(">> Saving log: " + logEntry);
         logEntryRepository.save(logEntry);
 
         return ResponseEntity.ok().build();
